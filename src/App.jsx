@@ -49,7 +49,7 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="text-2xl font-bold text-white"
             >
-              Alex Johnson
+              Sujith Chitturi
             </motion.div>
             <div className="hidden md:flex space-x-8">
               {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
@@ -88,7 +88,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <TypingAnimation text="Web & AI Developer" />
+            <TypingAnimation text="Software Engineer" />
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto"
@@ -96,7 +96,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Building intelligent solutions for the digital world with modern web technologies and artificial intelligence
+            Software Engineer with expertise in developing AI agents, secure full-stack web solutions, and scalable mobile applications that enhance efficiency and drive innovation.
           </motion.p>
           
           {/* Stats Section */}
@@ -107,16 +107,16 @@ function App() {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <div className="text-center">
-              <div className="text-2xl font-bold text-blue-400 mb-1">15+</div>
+              <div className="text-2xl font-bold text-blue-400 mb-1">2+</div>
+              <div className="text-sm text-slate-400">Years Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-purple-400 mb-1">5+</div>
               <div className="text-sm text-slate-400">Projects</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-purple-400 mb-1">3+</div>
-              <div className="text-sm text-slate-400">Years Learning</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-green-400 mb-1">95%</div>
-              <div className="text-sm text-slate-400">AI Accuracy</div>
+              <div className="text-2xl font-bold text-green-400 mb-1">AI</div>
+              <div className="text-sm text-slate-400">Focus</div>
             </div>
           </motion.div>
           
@@ -165,9 +165,7 @@ function App() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              I'm a passionate computer science student specializing in web development and artificial intelligence. 
-              I love creating innovative solutions that bridge the gap between cutting-edge AI technology and 
-              user-friendly web applications.
+              Software Engineer with expertise in developing AI agents, secure full-stack web solutions, and scalable mobile applications that enhance efficiency and drive innovation.
             </p>
           </motion.div>
 
@@ -195,8 +193,8 @@ function App() {
               <motion.div variants={fadeInUp}>
                 <h3 className="text-2xl font-semibold text-white mb-4">What I Do</h3>
                 <p className="text-slate-300 mb-6">
-                  I specialize in creating full-stack web applications with modern frameworks like React and Node.js, 
-                  while also developing machine learning models and AI-powered features that enhance user experiences.
+                  I specialize in developing AI agents, secure full-stack web solutions, and scalable mobile applications. 
+                  My expertise spans modern web frameworks, machine learning, and mobile development, enhancing efficiency and driving innovation.
                 </p>
               </motion.div>
               
@@ -207,15 +205,15 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Brain className="h-6 w-6 text-purple-400" />
-                  <span className="text-slate-300">AI & Machine Learning</span>
+                  <span className="text-slate-300">AI & Automation</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Code className="h-6 w-6 text-green-400" />
-                  <span className="text-slate-300">Full-Stack Development</span>
+                  <span className="text-slate-300">Mobile Development</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Database className="h-6 w-6 text-yellow-400" />
-                  <span className="text-slate-300">Data Science</span>
+                  <span className="text-slate-300">Databases</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -235,7 +233,7 @@ function App() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Featured Projects</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              A showcase of my work in web development and artificial intelligence
+              A showcase of my work in web development, AI, and mobile applications
             </p>
           </motion.div>
 
@@ -246,13 +244,48 @@ function App() {
             whileInView="animate"
             viewport={{ once: true }}
           >
-            {/* Project 1 - E-commerce Platform */}
+            {/* Project 1 - Finnec - Advisory platform */}
             <motion.div variants={fadeInUp}>
               <Card className="bg-slate-800 border-slate-700 hover:border-blue-500 transition-colors duration-300">
                 <CardHeader>
-                  <CardTitle className="text-white">E-commerce Platform</CardTitle>
+                  <CardTitle className="text-white">Finnec - Advisory Platform</CardTitle>
                   <CardDescription className="text-slate-400">
-                    Full-stack web application with React, Node.js, and MongoDB
+                    Web-based financial advisory platform for SMEs
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">Flask</Badge>
+                      <Badge variant="secondary">OpenAI APIs</Badge>
+                      <Badge variant="secondary">Machine Learning</Badge>
+                      <Badge variant="secondary">Render</Badge>
+                    </div>
+                    <p className="text-slate-300 text-sm">
+                      Built a web-based financial advisory platform for SMEs using Flask, OpenAI APIs, and machine learning models for predictive analytics. Designed backend APIs and integrated ML pipelines, deployed the app on Render, and ensured secure handling of sensitive financial data.
+                    </p>
+                    <div className="flex space-x-2">
+                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </Button>
+                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Project Link
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Project 2 - Nova – Voice Unleashes Possibility */}
+            <motion.div variants={fadeInUp}>
+              <Card className="bg-slate-800 border-slate-700 hover:border-purple-500 transition-colors duration-300">
+                <CardHeader>
+                  <CardTitle className="text-white">Nova – Voice Assistant</CardTitle>
+                  <CardDescription className="text-slate-400">
+                    Full-stack voice-assistant application with natural speech interaction
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -260,12 +293,11 @@ function App() {
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary">React</Badge>
                       <Badge variant="secondary">Node.js</Badge>
-                      <Badge variant="secondary">MongoDB</Badge>
-                      <Badge variant="secondary">Stripe</Badge>
+                      <Badge variant="secondary">Express.js</Badge>
+                      <Badge variant="secondary">JWT</Badge>
                     </div>
                     <p className="text-slate-300 text-sm">
-                      A complete e-commerce solution with user authentication, payment processing, 
-                      and admin dashboard. Features include product catalog, shopping cart, and order management.
+                      Developed a full-stack voice-assistant application enabling natural speech interaction and real-time tool execution with a secure JWT-authenticated pipeline, rate-limiting, and input sanitization for reliability. Built with React (Web Speech API + TTS), Node.js, Express.js, and Winston for logging and persistent memory.
                     </p>
                     <div className="flex space-x-2">
                       <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
@@ -274,7 +306,7 @@ function App() {
                       </Button>
                       <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
+                        Project Link
                       </Button>
                     </div>
                   </div>
@@ -282,62 +314,25 @@ function App() {
               </Card>
             </motion.div>
 
-            {/* Project 2 - AI Image Classifier */}
-            <motion.div variants={fadeInUp}>
-              <Card className="bg-slate-800 border-slate-700 hover:border-purple-500 transition-colors duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">AI Image Classifier</CardTitle>
-                  <CardDescription className="text-slate-400">
-                    Deep learning model for image recognition using TensorFlow
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Python</Badge>
-                      <Badge variant="secondary">TensorFlow</Badge>
-                      <Badge variant="secondary">OpenCV</Badge>
-                      <Badge variant="secondary">Flask</Badge>
-                    </div>
-                    <p className="text-slate-300 text-sm">
-                      Convolutional Neural Network that classifies images with 95% accuracy. 
-                      Includes web interface for real-time image upload and classification.
-                    </p>
-                    <div className="flex space-x-2">
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Button>
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Project 3 - Task Management App */}
+            {/* Project 3 - Web & Android Developer Intern/Technical Associate – Aczen */}
             <motion.div variants={fadeInUp}>
               <Card className="bg-slate-800 border-slate-700 hover:border-green-500 transition-colors duration-300">
                 <CardHeader>
-                  <CardTitle className="text-white">Task Management App</CardTitle>
+                  <CardTitle className="text-white">Aczen - Intern Projects</CardTitle>
                   <CardDescription className="text-slate-400">
-                    Collaborative project management tool with real-time updates
+                    Scalable Android applications and UX/UI design
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Next.js</Badge>
-                      <Badge variant="secondary">Socket.io</Badge>
-                      <Badge variant="secondary">PostgreSQL</Badge>
-                      <Badge variant="secondary">Prisma</Badge>
+                      <Badge variant="secondary">Android Studio</Badge>
+                      <Badge variant="secondary">XML</Badge>
+                      <Badge variant="secondary">Figma</Badge>
+                      <Badge variant="secondary">APIs</Badge>
                     </div>
                     <p className="text-slate-300 text-sm">
-                      Real-time collaborative task management with drag-and-drop interface, 
-                      team collaboration features, and progress tracking.
+                      Built scalable Android applications using Android Studio, XML layouts, and domain classes while ensuring a responsive UI. Integrated APIs, including banking APIs, to enhance functionality and secure transactions. Designed UX/UI for the Aczen Pay app using Figma, focusing on user-centric design and seamless navigation. Collaborated with cross-functional teams to meet client requirements and optimize performance.
                     </p>
                     <div className="flex space-x-2">
                       <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
@@ -346,115 +341,7 @@ function App() {
                       </Button>
                       <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Live App
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Project 4 - Chatbot with NLP */}
-            <motion.div variants={fadeInUp}>
-              <Card className="bg-slate-800 border-slate-700 hover:border-yellow-500 transition-colors duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">AI Chatbot</CardTitle>
-                  <CardDescription className="text-slate-400">
-                    Natural Language Processing chatbot with sentiment analysis
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Python</Badge>
-                      <Badge variant="secondary">NLTK</Badge>
-                      <Badge variant="secondary">Transformers</Badge>
-                      <Badge variant="secondary">FastAPI</Badge>
-                    </div>
-                    <p className="text-slate-300 text-sm">
-                      Intelligent chatbot using transformer models for natural conversation 
-                      and sentiment analysis for customer service applications.
-                    </p>
-                    <div className="flex space-x-2">
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Button>
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Try It
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Project 5 - Data Visualization Dashboard */}
-            <motion.div variants={fadeInUp}>
-              <Card className="bg-slate-800 border-slate-700 hover:border-red-500 transition-colors duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">Data Analytics Dashboard</CardTitle>
-                  <CardDescription className="text-slate-400">
-                    Interactive dashboard for business intelligence and analytics
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">React</Badge>
-                      <Badge variant="secondary">D3.js</Badge>
-                      <Badge variant="secondary">Python</Badge>
-                      <Badge variant="secondary">Pandas</Badge>
-                    </div>
-                    <p className="text-slate-300 text-sm">
-                      Interactive data visualization dashboard with real-time analytics, 
-                      custom charts, and automated reporting features.
-                    </p>
-                    <div className="flex space-x-2">
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Button>
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Dashboard
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            {/* Project 6 - Mobile App */}
-            <motion.div variants={fadeInUp}>
-              <Card className="bg-slate-800 border-slate-700 hover:border-indigo-500 transition-colors duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">React Native App</CardTitle>
-                  <CardDescription className="text-slate-400">
-                    Cross-platform mobile application for fitness tracking
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">React Native</Badge>
-                      <Badge variant="secondary">Expo</Badge>
-                      <Badge variant="secondary">Firebase</Badge>
-                      <Badge variant="secondary">Redux</Badge>
-                    </div>
-                    <p className="text-slate-300 text-sm">
-                      Cross-platform fitness tracking app with workout logging, 
-                      progress visualization, and social features for motivation.
-                    </p>
-                    <div className="flex space-x-2">
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Button>
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        App Store
+                        Details
                       </Button>
                     </div>
                   </div>
@@ -477,7 +364,7 @@ function App() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Skills & Technologies</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              A comprehensive toolkit for modern web development and AI applications
+              A comprehensive toolkit for modern web development, AI, and mobile applications
             </p>
           </motion.div>
 
@@ -498,8 +385,8 @@ function App() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2">
-                    {['JavaScript', 'Python', 'TypeScript', 'HTML/CSS', 'SQL', 'Java'].map((skill) => (
+                  <div className="flex flex-wrap gap-2">
+                    {[ "C++", "Java", "Python", "JavaScript"].map((skill) => (
                       <Badge key={skill} variant="outline" className="border-slate-600 text-slate-300">
                         {skill}
                       </Badge>
@@ -509,18 +396,18 @@ function App() {
               </Card>
             </motion.div>
 
-            {/* Web Frameworks */}
+            {/* Web Development */}
             <motion.div variants={fadeInUp}>
               <Card className="bg-slate-800 border-slate-700 h-full">
                 <CardHeader>
                   <CardTitle className="text-white flex items-center">
                     <Globe className="mr-2 h-5 w-5 text-green-400" />
-                    Web Frameworks
+                    Web Development
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2">
-                    {['React', 'Next.js', 'Node.js', 'Express', 'Flask', 'FastAPI'].map((skill) => (
+                  <div className="flex flex-wrap gap-2">
+                    {[ "HTML", "CSS", "React.js", "Node.js", "REST APIs"].map((skill) => (
                       <Badge key={skill} variant="outline" className="border-slate-600 text-slate-300">
                         {skill}
                       </Badge>
@@ -530,18 +417,18 @@ function App() {
               </Card>
             </motion.div>
 
-            {/* AI/ML */}
+            {/* AI & Automation */}
             <motion.div variants={fadeInUp}>
               <Card className="bg-slate-800 border-slate-700 h-full">
                 <CardHeader>
                   <CardTitle className="text-white flex items-center">
                     <Brain className="mr-2 h-5 w-5 text-purple-400" />
-                    AI & ML
+                    AI & Automation
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2">
-                    {['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'OpenCV', 'Hugging Face'].map((skill) => (
+                  <div className="flex flex-wrap gap-2">
+                    {[ "AI Agents", "Automation Workflows", "Machine Learning Basics"].map((skill) => (
                       <Badge key={skill} variant="outline" className="border-slate-600 text-slate-300">
                         {skill}
                       </Badge>
@@ -551,18 +438,18 @@ function App() {
               </Card>
             </motion.div>
 
-            {/* Tools & Platforms */}
+            {/* Mobile Development & Databases */}
             <motion.div variants={fadeInUp}>
               <Card className="bg-slate-800 border-slate-700 h-full">
                 <CardHeader>
                   <CardTitle className="text-white flex items-center">
                     <Database className="mr-2 h-5 w-5 text-yellow-400" />
-                    Tools & Platforms
+                    Mobile & Databases
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2">
-                    {['Git', 'Docker', 'AWS', 'MongoDB', 'PostgreSQL', 'Firebase'].map((skill) => (
+                  <div className="flex flex-wrap gap-2">
+                    {[ "Android (Java/Kotlin)", "Firebase", "MySQL", "PostgreSQL"].map((skill) => (
                       <Badge key={skill} variant="outline" className="border-slate-600 text-slate-300">
                         {skill}
                       </Badge>
@@ -596,7 +483,7 @@ function App() {
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
               >
                 <Mail className="mr-2 h-5 w-5" />
-                alex.johnson@email.com
+                chsujith13@gmail.com
               </Button>
               
               <div className="flex space-x-4">

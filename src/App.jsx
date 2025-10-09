@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
@@ -189,7 +190,7 @@ function App() {
                 <h3 className="text-2xl font-semibold text-white mb-4">What I Do</h3>
                 <p className="text-slate-300 mb-6">
                   I specialize in developing AI agents, secure full-stack web solutions, and scalable mobile applications. 
-                  My expertise spans modern web frameworks, machine learning, and mobile development, enhancing efficiency and driving innovation.
+                  My expertise spans modern web frameworks, machine learning, and mobile development, enhancing efficiency and drive innovation.
                 </p>
               </motion.div>
               
@@ -390,7 +391,7 @@ function App() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {[ "AI Agents", "Automation Workflows", "Machine Learning Basics"].map((skill) => (
+                    {[ "Machine Learning", "Deep Learning", "NLP", "OpenAI APIs", "Data Analysis"].map((skill) => (
                       <Badge key={skill} variant="outline" className="border-slate-600 text-slate-300">
                         {skill}
                       </Badge>
@@ -400,7 +401,7 @@ function App() {
               </Card>
             </motion.div>
 
-            {/* Mobile Development & Databases */}
+            {/* Mobile & Databases */}
             <motion.div variants={fadeInUp}>
               <Card className="bg-slate-800 border-slate-700 h-full">
                 <CardHeader>
@@ -411,7 +412,7 @@ function App() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {[ "Android (Java/Kotlin)", "Firebase", "MySQL", "PostgreSQL"].map((skill) => (
+                    {[ "Android Dev", "iOS Dev", "SQL", "NoSQL", "MongoDB"].map((skill) => (
                       <Badge key={skill} variant="outline" className="border-slate-600 text-slate-300">
                         {skill}
                       </Badge>
@@ -426,58 +427,60 @@ function App() {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-slate-800/50">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
+        <div className="max-w-6xl mx-auto text-center">
+          <motion.div 
+            className="text-center mb-16"
             variants={fadeInUp}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Let's Work Together</h2>
-            <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
-              I'm always interested in new opportunities and exciting projects. 
-              Let's connect and discuss how we can create something amazing together.
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Get in Touch</h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+              I'm always open to new opportunities and collaborations. Feel free to reach out!
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button 
-                size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                chsujith13@gmail.com
-              </Button>
-              
-              <div className="flex space-x-4">
-                <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">
-                  <Github className="mr-2 h-5 w-5" />
-                  GitHub
-                </Button>
-                <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">
-                  <Linkedin className="mr-2 h-5 w-5" />
-                  LinkedIn
-                </Button>
-              </div>
-            </div>
+          </motion.div>
+
+          <motion.div 
+            className="flex flex-col sm:flex-row justify-center gap-6"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            <motion.div variants={fadeInUp}>
+              <a href="mailto:sujith.chitturi@example.com" className="flex items-center justify-center space-x-3 text-slate-300 hover:text-white transition-colors">
+                <Mail className="h-6 w-6" />
+                <span>sujith.chitturi@example.com</span>
+              </a>
+            </motion.div>
+            <motion.div variants={fadeInUp}>
+              <a href="http://www.linkedin.com/in/sujith-chitturi" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center space-x-3 text-slate-300 hover:text-white transition-colors">
+                <Linkedin className="h-6 w-6" />
+                <span>LinkedIn</span>
+              </a>
+            </motion.div>
+            <motion.div variants={fadeInUp}>
+              <a href="https://github.com/sujith130" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center space-x-3 text-slate-300 hover:text-white transition-colors">
+                <Github className="h-6 w-6" />
+                <span>GitHub</span>
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
-
-
       {/* Footer */}
-      <footer className="py-8 px-4 border-t border-slate-700">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-slate-400">
-            © 2024 Alex Johnson. Built with React, Tailwind CSS, and lots of ☕
-          </p>
+      <footer className="py-8 px-4 text-center text-slate-500 text-sm bg-slate-900">
+        <div className="max-w-6xl mx-auto">
+          <p>&copy; {new Date().getFullYear()} Sujith Chitturi. All rights reserved.</p>
         </div>
       </footer>
 
-      {/* Scroll to Top Button */}
       <ScrollToTop />
     </div>
   )
 }
 
 export default App
+

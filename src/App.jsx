@@ -101,15 +101,11 @@ function App() {
           
           {/* Stats Section */}
           <motion.div 
-            className="grid grid-cols-3 gap-8 mb-8 max-w-md mx-auto"
+            className="grid grid-cols-2 gap-8 mb-8 max-w-md mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-400 mb-1">2+</div>
-              <div className="text-sm text-slate-400">Years Experience</div>
-            </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-purple-400 mb-1">5+</div>
               <div className="text-sm text-slate-400">Projects</div>
@@ -118,8 +114,7 @@ function App() {
               <div className="text-2xl font-bold text-green-400 mb-1">AI</div>
               <div className="text-sm text-slate-400">Focus</div>
             </div>
-          </motion.div>
-          
+          </motion.div>        
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"
             initial={{ opacity: 0, y: 30 }}
@@ -314,40 +309,7 @@ function App() {
               </Card>
             </motion.div>
 
-            {/* Project 3 - Web & Android Developer Intern/Technical Associate – Aczen */}
-            <motion.div variants={fadeInUp}>
-              <Card className="bg-slate-800 border-slate-700 hover:border-green-500 transition-colors duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">Aczen - Intern Projects</CardTitle>
-                  <CardDescription className="text-slate-400">
-                    Scalable Android applications and UX/UI design
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">Android Studio</Badge>
-                      <Badge variant="secondary">XML</Badge>
-                      <Badge variant="secondary">Figma</Badge>
-                      <Badge variant="secondary">APIs</Badge>
-                    </div>
-                    <p className="text-slate-300 text-sm">
-                      Built scalable Android applications using Android Studio, XML layouts, and domain classes while ensuring a responsive UI. Integrated APIs, including banking APIs, to enhance functionality and secure transactions. Designed UX/UI for the Aczen Pay app using Figma, focusing on user-centric design and seamless navigation. Collaborated with cross-functional teams to meet client requirements and optimize performance.
-                    </p>
-                    <div className="flex space-x-2">
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Button>
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Details
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+
           </motion.div>
         </div>
       </section>

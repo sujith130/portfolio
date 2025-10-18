@@ -91,3 +91,4 @@ temp/
 
 # Netlify
 .netlify/
+node_modules

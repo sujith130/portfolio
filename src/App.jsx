@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Github, Linkedin, Mail, ExternalLink, Download, Code, Brain, Database, Globe, ChevronDown, Star, Users, Award } from 'lucide-react'
+import { Github, Linkedin, Mail, ExternalLink, Code, Brain, Database, Globe, ChevronDown, Star, Users, Award } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { ScrollToTop, TypingAnimation, FloatingParticles, SkillProgressBar } from './components/InteractiveFeatures.jsx'
 import './App.css'
@@ -102,7 +102,7 @@ function App() {
           
           {/* Stats Section */}
           <motion.div 
-            className="grid grid-cols-2 gap-8 mb-8 max-w-md mx-auto"
+            className="grid grid-cols-3 gap-6 mb-8 max-w-lg mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -114,6 +114,17 @@ function App() {
             <div className="text-center">
               <div className="text-2xl font-bold text-green-400 mb-1">AI</div>
               <div className="text-sm text-slate-400">Focus</div>
+            </div>
+            <div className="text-center">
+              <a 
+                href="https://github.com/sujith130" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex flex-col items-center hover:scale-105 transition-transform duration-200"
+              >
+                <Github className="h-8 w-8 text-blue-400 mb-1" />
+                <div className="text-sm text-slate-400">GitHub</div>
+              </a>
             </div>
           </motion.div>        
           <motion.div 
@@ -132,10 +143,11 @@ function App() {
             <Button 
               size="lg" 
               variant="outline" 
+              onClick={() => scrollToSection('contact')}
               className="border-slate-400 text-slate-300 hover:bg-slate-800 px-8 py-3 transform hover:scale-105 transition-transform"
             >
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
+              <Mail className="mr-2 h-4 w-4" />
+              Get in Touch
             </Button>
           </motion.div>
         </motion.div>
@@ -161,7 +173,7 @@ function App() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Software Engineer with expertise in developing AI agents, secure full-stack web solutions, and scalable mobile applications that enhance efficiency and drive innovation.
+              Passionate software engineer with a love for creating innovative solutions. I enjoy working with modern technologies to build applications that make a difference.
             </p>
           </motion.div>
 
@@ -189,8 +201,8 @@ function App() {
               <motion.div variants={fadeInUp}>
                 <h3 className="text-2xl font-semibold text-white mb-4">What I Do</h3>
                 <p className="text-slate-300 mb-6">
-                  I specialize in developing AI agents, secure full-stack web solutions, and scalable mobile applications. 
-                  My expertise spans modern web frameworks, machine learning, and mobile development, enhancing efficiency and drive innovation.
+                  I'm a software engineer who loves building things that matter. Whether it's web applications, 
+                  AI-powered solutions, or mobile apps, I enjoy the challenge of turning ideas into reality using modern technologies.
                 </p>
               </motion.div>
               
@@ -310,7 +322,50 @@ function App() {
               </Card>
             </motion.div>
 
-
+            {/* Project 3 - GitHub Shortcut */}
+            <motion.div variants={fadeInUp}>
+              <Card className="bg-slate-800 border-slate-700 hover:border-green-500 transition-colors duration-300">
+                <CardHeader>
+                  <CardTitle className="text-white">Explore More Projects</CardTitle>
+                  <CardDescription className="text-slate-400">
+                    Visit my GitHub to discover additional projects
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">GitHub</Badge>
+                      <Badge variant="secondary">Open Source</Badge>
+                      <Badge variant="secondary">Repositories</Badge>
+                      <Badge variant="secondary">Code</Badge>
+                    </div>
+                    <p className="text-slate-300 text-sm">
+                      Check out my GitHub profile to explore more of my work, including open-source contributions, side projects, and code repositories. I'm constantly working on new ideas and sharing my coding journey.
+                    </p>
+                    <div className="flex space-x-2">
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="border-slate-600 text-slate-300"
+                        onClick={() => window.open('https://github.com/sujith130', '_blank')}
+                      >
+                        <Github className="mr-2 h-4 w-4" />
+                        Visit GitHub
+                      </Button>
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="border-slate-600 text-slate-300"
+                        onClick={() => window.open('https://github.com/sujith130?tab=repositories', '_blank')}
+                      >
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        View Repos
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -449,9 +504,9 @@ function App() {
             viewport={{ once: true }}
           >
             <motion.div variants={fadeInUp}>
-              <a href="mailto:sujith.chitturi@example.com" className="flex items-center justify-center space-x-3 text-slate-300 hover:text-white transition-colors">
+              <a href="mailto:chsujith13@gmail.com" className="flex items-center justify-center space-x-3 text-slate-300 hover:text-white transition-colors">
                 <Mail className="h-6 w-6" />
-                <span>sujith.chitturi@example.com</span>
+                <span>chsujith13@gmail.com</span>
               </a>
             </motion.div>
             <motion.div variants={fadeInUp}>
